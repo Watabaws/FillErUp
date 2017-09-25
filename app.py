@@ -9,41 +9,41 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_werld():
-    return "<title> Bird is the word </title> <h1> Welcome to my world </h1>\n<h3> You like birds? </h3><h3>Click bird!</h3>"
-    return '<a href="/chicken"><center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOEc4AAoTEXpd_xTB9EbjY2asvXZw_Hhk-0m-VS845Stod7SF6eQ"></center><br></a>'
-    return '<a href="/duck"><center><img src="https://previews.123rf.com/images/tigatelu/tigatelu1404/tigatelu140400332/27657271-Cute-duck-cartoon-Stock-Vector.jpg"></center><br></a>'
-    return '<a href="/penguin"><center><img src="https://openclipart.org/image/2400px/svg_to_png/17535/lemmling-Cartoon-penguin.png"></center><br></a>'
-    return '<a href="/vulture"><center><img src="http://media.gettyimages.com/vectors/vulture-sitting-on-a-branch-vector-id512172788?s=612x612"></center><br></a>'
-    return '<a href="/flamingo><center><img src="https://previews.123rf.com/images/cthoman/cthoman1403/cthoman140300025/26322292-A-cartoon-pink-flamingo-standing-on-one-leg--Stock-Vector.jpg"></center><br></a>'
+    return '''<title> Bird is the word </title> <h1> Welcome to my world </h1>\n<h3> You like birds? </h3><h3>Click bird!</h3>
+    <a href="/chicken"><center><img src="https://i.pinimg.com/236x/b8/8e/00/b88e00b6fa232a4b27b3d3cb0bd436a9--chicken-roosters.jpg"></center><br></a>'
+    <a href="/duck"><center><img src="https://previews.123rf.com/images/tigatelu/tigatelu1404/tigatelu140400332/27657271-Cute-duck-cartoon-Stock-Vector.jpg"></center><br></a>'
+    <a href="/penguin"><center><img src="https://openclipart.org/image/2400px/svg_to_png/17535/lemmling-Cartoon-penguin.png"></center><br></a>'
+    <a href="/vulture"><center><img src="http://media.gettyimages.com/vectors/vulture-sitting-on-a-branch-vector-id512172788?s=612x612"></center><br></a>'
+    <a href="/flamingo><center><img src="https://previews.123rf.com/images/cthoman/cthoman1403/cthoman140300025/26322292-A-cartoon-pink-flamingo-standing-on-one-leg--Stock-Vector.jpg"></center><br></a>'''
     
     
 @app.route("/chicken")
 def chickpic():
-    return "<style> body { background-color: red; }"
-    return '<center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOEc4AAoTEXpd_xTB9EbjY2asvXZw_Hhk-0m-VS845Stod7SF6eQ"></center>'
+    return'''<style> body { background-color: red; }
+    <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOEc4AAoTEXpd_xTB9EbjY2asvXZw_Hhk-0m-VS845Stod7SF6eQ"></center>'''
 
 
 @app.route("/duck")
 def duckpic():
-    return "<style> body { background-color: yellow; }"
-    return '<center><img src="https://previews.123rf.com/images/tigatelu/tigatelu1404/tigatelu140400332/27657271-Cute-duck-cartoon-Stock-Vector.jpg"></center>'
+    return '''<style> body { background-color: yellow; }
+    <center><img src="https://previews.123rf.com/images/tigatelu/tigatelu1404/tigatelu140400332/27657271-Cute-duck-cartoon-Stock-Vector.jpg"></center>'''
 
 
 @app.route("/penguin")
 def pengpic():
-    return "<style> body { background-color: black; }"
-    return '<center><img src="https://openclipart.org/image/2400px/svg_to_png/17535/lemmling-Cartoon-penguin.png"></center>'
+    return '''<style> body { background-color: black; }
+    <center><img src="https://openclipart.org/image/2400px/svg_to_png/17535/lemmling-Cartoon-penguin.png"></center>'''
 
 
 @app.route("/vulture")
 def vulpix():
-    return "<style> body { background-color: purple; }"
-    return '<center><img src="http://media.gettyimages.com/vectors/vulture-sitting-on-a-branch-vector-id512172788?s=612x612"></center>'
+    return '''<style> body { background-color: purple; }
+    <center><img src="http://media.gettyimages.com/vectors/vulture-sitting-on-a-branch-vector-id512172788?s=612x612"></center>'''
 
 @app.route("/flamingo")
 def flapic():
-    return "<style> body {background-color: pink; }"
-    return '<center><img src="https://previews.123rf.com/images/cthoman/cthoman1403/cthoman140300025/26322292-A-cartoon-pink-flamingo-standing-on-one-leg--Stock-Vector.jpg"></center>'
+    return '''<style> body {background-color: pink; }
+    <center><img src="https://previews.123rf.com/images/cthoman/cthoman1403/cthoman140300025/26322292-A-cartoon-pink-flamingo-standing-on-one-leg--Stock-Vector.jpg"></center>'''
 
 
 
