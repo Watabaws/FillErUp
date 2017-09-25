@@ -3,7 +3,7 @@
 #HW04: Fill up yer Flask
 #2017-09-21
 
-from flask importFlask
+from flask import Flask
 
 app = Flask(__name__)
 
@@ -50,4 +50,3 @@ def flapic():
 if __name__ == "__main__":
     app.debug = True
     app.run()
-    
